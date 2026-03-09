@@ -33,9 +33,6 @@ HyPER/
 
 ## Video Demonstrations
 
-### HyPER — Full System
-[![HyPER Demo](https://img.youtube.com/vi/zdk7TQ-G3aY/maxresdefault.jpg)](https://youtu.be/zdk7TQ-G3aY)
-
 ### STEP — Geometric Heuristics
 [![STEP Demo](https://img.youtube.com/vi/mU_K56Iut88/maxresdefault.jpg)](https://youtu.be/mU_K56Iut88)
 
@@ -44,6 +41,9 @@ HyPER/
 
 ### Simple Fusion — Baseline Comparison
 [![Simple Fusion Demo](https://img.youtube.com/vi/1gkk3FRGyj8/maxresdefault.jpg)](https://youtu.be/1gkk3FRGyj8)
+
+### HyPER — Full System
+[![HyPER Demo](https://img.youtube.com/vi/zdk7TQ-G3aY/maxresdefault.jpg)](https://youtu.be/zdk7TQ-G3aY)
 
 ---
 
