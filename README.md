@@ -4,6 +4,33 @@ A robust, hybrid autonomous navigation framework that integrates geometric heuri
 
 ---
 
+This research makes use of:
+
+- [RandLA-Net PyTorch](https://github.com/tsunghan-wu/RandLA-Net-pytorch)
+- [Cosys-AirSim](https://github.com/Cosys-Lab/Cosys-AirSim) with UE block environment
+
+## Overview
+
+HyPER addresses the challenge of safe autonomous navigation in GPS-denied, unstructured subterranean environments by fusing two complementary risk estimation strategies:
+
+| Component     | Type          | Role                                          |
+|---------------|---------------|-----------------------------------------------|
+| STEP          | Geometric     | Interpretable traversability heuristics       |
+| RandLA-Net    | Deep Learning | Fast semantic segmentation of 3D point clouds |
+| Simple Fusion | Baseline      | Naive sensor fusion for benchmarking          |
+| HyPER Fusion  | Hybrid        | Confidence-weighted risk map integration      |
+
+## Repository Structure
+
+```text
+HyPER/
+├── Frameworks/           # Geometric heuristics (STEP) and related modules
+├── Frameworks/rand/      # RandLA-Net semantic segmentation implementation
+├── Frameworks/record/    # Experiment records, statistics, and logs
+├── configs/              # Experiment configurations
+└── environment.yml       # Conda environment for RandLA-Net and Cosys-AirSim
+```
+
 ## Video Demonstrations
 
 ### HyPER — Full System
@@ -17,31 +44,6 @@ A robust, hybrid autonomous navigation framework that integrates geometric heuri
 
 ### Simple Fusion — Baseline Comparison
 [![Simple Fusion Demo](https://img.youtube.com/vi/1gkk3FRGyj8/maxresdefault.jpg)](https://youtu.be/1gkk3FRGyj8)
-
----
-
-## Overview
-
-HyPER addresses the challenge of safe autonomous navigation in GPS-denied, unstructured subterranean environments by fusing two complementary risk estimation strategies:
-
-| Component | Type | Role |
-|-----------|------|------|
-| STEP | Geometric | Interpretable traversability heuristics |
-| RandLA-Net | Deep Learning | Fast semantic segmentation of 3D point clouds |
-| HyPER Fusion | Hybrid | Confidence-weighted risk map integration |
-
----
-
-## Repository Structure
-
-```
-hyper/
-├── step/               # Geometric heuristics module
-├── randlanet/          # Semantic segmentation module
-├── fusion/             # HyPER hybrid fusion layer
-├── evaluation/         # Benchmarking and comparison tools
-└── configs/            # Experiment configurations
-```
 
 ---
 
